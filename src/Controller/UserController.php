@@ -1,5 +1,12 @@
 <?php
 
+
+namespace Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+#[ORM\Entity]
+
 class UserController {
     public function loginAction() {
         $username = $_POST['username'] ?? null;

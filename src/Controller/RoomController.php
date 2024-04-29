@@ -32,28 +32,7 @@ class RoomController {
         }
     }
 
-    public function reserve($roomId, $userId) {
-        // Réserver une chambre
-        // Cette logique serait normalement dans le ReservationController,
-        // mais je l'ai inclus ici comme exemple.
 
-        // Valider les données et vérifier la disponibilité de la chambre
-        // ...
-
-        // Mettre à jour la chambre comme étant réservée
-        $stmt = $this->db->prepare("UPDATE rooms SET available = 0 WHERE id = ?");
-        $stmt->bind_param("i", $roomId);
-
-        if ($stmt->execute()) {
-            echo "Chambre réservée avec succès.";
-            // Ici, vous devriez probablement créer également une entrée dans une table de réservations
-        } else {
-            echo "Erreur lors de la réservation de la chambre.";
-            // Gérer l'erreur
-        }
-
-        $stmt->close();
-    }
 
     // Ajoutez ici d'autres méthodes comme create, update, delete, etc.
 }
