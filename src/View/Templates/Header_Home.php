@@ -4,7 +4,7 @@
         <ul class="navbar navbar-expand-xl justify-content-end">
             <li class="nav-item">
             <button type="button" class="btn btn-success">
-                <a class="nav-link" href="/protoHotel/src/Entity/Reservation.php">Réserver</a></button>
+                <a class="nav-link" href="/protoHotel/src/View/Reservation.php">Réserver</a></button>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/protoHotel/src/Entity/Service.php">Services</a>

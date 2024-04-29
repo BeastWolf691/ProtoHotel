@@ -42,16 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Réservation de Chambre</title>
-    <!-- Intégration de Bootstrap pour le style -->
-    <link href="path_to_bootstrap.css" rel="stylesheet">
-    <link href="../styleProject.css" rel="stylesheet" type="text/css" media="all" />
-</head>
-<body>
+<link href="../View/Reservation.php" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!--lien de bootstrap-->
 
 <div class="container">
     <h1>Réservation de Chambre</h1>
@@ -99,12 +93,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary">Réserver</button>
+        <button type="submit" class="btn btn-success">Réserver</button>
     </form>
+    <ul>
+        <li class="nav-item reservation">
+            <button type="button" class="btn btn-success">
+                <a class="nav-link" href="../../index.php">Accueil</a></button>
+        </li>
+    </ul>
 </div>
 
-<!-- Intégration de Bootstrap JS et dépendances -->
-<script src="path_to_jquery.js"></script>
-<script src="path_to_bootstrap_js"></script>
-</body>
-</html>
+

@@ -36,6 +36,6 @@ ul.navbar {
     height: 850px;
     position: relative;
 }
-.container {
-    text-align: center;
+.reservation {
+    list-style-type: none;
 }

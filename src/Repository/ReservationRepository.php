@@ -1,6 +1,6 @@
 <?php
 
-class ServiceRepository {
+class ReservationRepository {
     protected $db;
 
     public function __construct($db) {
@@ -8,17 +8,41 @@ class ServiceRepository {
     }
 
     public function findAll() {
-        $stmt = $this->db->prepare("SELECT * FROM services");
+        $stmt = $this->db->prepare("SELECT * FROM reservations");
         $stmt->execute();
         return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     }
 
-    public function findById($serviceId) {
-        $stmt = $this->db->prepare("SELECT * FROM services WHERE id = ?");
-        $stmt->bind_param("i", $serviceId);
+    public function findById($reservationId) {
+        $stmt = $this->db->prepare("SELECT * FROM reservations WHERE id = ?");
+        $stmt->bind_param("i", $reservationId);
         $stmt->execute();
         return $stmt->get_result()->fetch_assoc();
     }
 
-    // Ajouter des méthodes pour ajouter, modifier, et supprimer des services
+    // Vous pouvez ajouter ici des méthodes pour ajouter, modifier, et supprimer des réservations
+
+    // Exemple d'une méthode pour ajouter une nouvelle réservation
+    public function add($userId, $roomId, $checkIn, $checkOut) {
+        $stmt = $this->db->prepare("INSERT INTO reservations (user_id, room_id, check_in, check_out) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("iiss", $userId, $roomId, $checkIn, $checkOut);
+        $stmt->execute();
+        return $stmt->insert_id; // Retourne l'ID de la réservation ajoutée
+    }
+
+    // Exemple d'une méthode pour modifier une réservation existante
+    public function update($reservationId, $userId, $roomId, $checkIn, $checkOut) {
+        $stmt = $this->db->prepare("UPDATE reservations SET user_id = ?, room_id = ?, check_in = ?, check_out = ? WHERE id = ?");
+        $stmt->bind_param("iissi", $userId, $roomId, $checkIn, $checkOut, $reservationId);
+        $stmt->execute();
+        return $stmt->affected_rows;
+    }
+
+    // Exemple d'une méthode pour supprimer une réservation
+    public function delete($reservationId) {
+        $stmt = $this->db->prepare("DELETE FROM reservations WHERE id = ?");
+        $stmt->bind_param("i", $reservationId);
+        $stmt->execute();
+        return $stmt->affected_rows;
+    }
 }
