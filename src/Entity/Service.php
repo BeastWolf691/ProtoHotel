@@ -42,6 +42,10 @@ $services = [
             </div>
         <?php endforeach; ?>
     </div>
+    <li class="nav-item">
+        <button type="button" class="btn btn-success">
+            <a class="nav-link" href="../../index.php">Accueil</a></button>
+    </li>
 </div>
 
 <!-- Intégration de Bootstrap JS et dépendances -->
