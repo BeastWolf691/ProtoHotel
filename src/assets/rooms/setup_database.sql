@@ -21,4 +21,4 @@ CREATE TABLE users (
     address VARCHAR(255)
 );
 
-INSERT INTO users (username, email, fullname, password, address) VALUES;
+INSERT INTO users (username, email, fullname, password, address) VALUES();
