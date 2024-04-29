@@ -21,10 +21,6 @@
             <p>Profitez de nos services de spa, restaurant et salle de sport.</p>
             <a href="services.php" class="btn btn-primary">Explorer les services</a>
         </div>
-        <div class="col-md-4">
-            <h2>Contact</h2><br>
-            <p>Contactez-nous pour réserver ou pour plus d'informations.</p>
-            <a href="contact.php" class="btn btn-primary">Nous contacter</a>
-        </div>
+
     </div>
 </div>

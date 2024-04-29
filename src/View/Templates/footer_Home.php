@@ -5,10 +5,10 @@
             <div class="col-md-4">
                 <h5>Contactez-Nous</h5>
                 <p>
-                    Hôtel Paradis<br>
+                    GT Hôtel<br>
                     123 Rue du Soleil, Paris, France<br>
                     Téléphone: +33 1 23 45 67 89<br>
-                    Email: contact@hotel-paradis.fr
+                    Email: contact@GTHôtel.fr
                 </p>
             </div>
             <div class="col-md-4">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="text-center mt-3">
-            <p>&copy; <?php echo date("Y"); ?> Hôtel Paradis. Tous droits réservés.</p>
+            <p>&copy; <?php echo date("Y"); ?>GT Hôtel. Tous droits réservés.</p>
         </div>
     </div>
 </footer>

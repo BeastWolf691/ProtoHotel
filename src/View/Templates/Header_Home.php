@@ -2,7 +2,7 @@
     <div class="banniere">
         <h1 class="titre">GT Hôtel</h1>
         <ul class="navbar navbar-expand-xl justify-content-end">
-        <li class="nav-item">
+            <li class="nav-item">
             <button type="button" class="btn btn-primary">
                 <a class="nav-link" href="/protoHotel/src/View/contact.php">Contact</a></button>
             </li>
@@ -20,7 +20,7 @@
                 <a class="nav-link" href="/protoHotel/src/View/Templates/login.php">Connexion</a>
             </li>
             <li class="nav-item co">
-                <a class="nav-link" href="">S'inscrire</a>
+                <a class="nav-link" href="/protoHotel/src/View/CreateProfil.php">S'inscrire</a>
             </li>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
