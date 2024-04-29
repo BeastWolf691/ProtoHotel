@@ -1,9 +1,9 @@
 {
-    "name": "srive/proto-hotel",
+    "name": "app/gthotel",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Srive\\ProtoHotel\\": "src/"
+            "App\\Gthotel\\": "src/"
         }
     },
     "authors": [
@@ -12,5 +12,6 @@
             "email": "sriver@hotmail.fr"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }

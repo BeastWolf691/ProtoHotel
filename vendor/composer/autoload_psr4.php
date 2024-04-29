@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Srive\\ProtoHotel\\' => array($baseDir . '/src'),
+    'App\\Gthotel\\' => array($baseDir . '/src'),
 );
