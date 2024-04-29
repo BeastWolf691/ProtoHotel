@@ -8,7 +8,7 @@ use Doctrine\ORM\ORMSetup;
  
 // Create a simple "default" Doctrine ORM configuration for Attributes
 $config = ORMSetup::createAttributeMetadataConfiguration(
-    paths: array(__DIR__."/src/classes"),
+    paths: array(__DIR__."/src/Views"),
     isDevMode: true,
 );
  
