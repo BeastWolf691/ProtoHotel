@@ -1,2 +1,16 @@
 {
+    "name": "srive/proto-hotel",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Srive\\ProtoHotel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Steven Riviere",
+            "email": "sriver@hotmail.fr"
+        }
+    ],
+    "require": {}
 }

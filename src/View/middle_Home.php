@@ -1,6 +1,6 @@
 
 <div class="affiche">
-    <img src="..//5451_ho_00_p_2048x1536.jpg" height="100%" width="100%">
+    <img src="./src/assets/5451_ho_00_p_2048x1536.jpg" height="100%" width="100%">
 
 </div>
 
