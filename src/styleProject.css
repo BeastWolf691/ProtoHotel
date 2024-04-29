@@ -36,6 +36,7 @@ ul.navbar {
     height: 850px;
     position: relative;
 }
-.reservation {
-    list-style-type: none;
+.connexion {
+    margin : 25px 75px;
+    background-color: #ffffea;
 }
