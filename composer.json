@@ -13,5 +13,8 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "doctrine/orm": "4.0.x-dev",
+        "symfony/cache": "7.1.x-dev"
+    }
 }
