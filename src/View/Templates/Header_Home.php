@@ -2,6 +2,10 @@
     <div class="banniere">
         <h1 class="titre">GT Hôtel</h1>
         <ul class="navbar navbar-expand-xl justify-content-end">
+        <li class="nav-item">
+            <button type="button" class="btn btn-primary">
+                <a class="nav-link" href="/protoHotel/src/View/contact.php">Contact</a></button>
+            </li>
             <li class="nav-item">
             <button type="button" class="btn btn-success">
                 <a class="nav-link" href="/protoHotel/src/View/Reservation.php">Réserver</a></button>

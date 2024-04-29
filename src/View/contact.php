@@ -26,14 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-</head>
-<body>
-    <div class="banniere">
-        <h1 class="titre">GT Hôtel</h1>
-    </div>
+<link href="../../src/styleProject.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!--lien de bootstrap-->
 
     <div class="container">
         <h1>Contactez-nous</h1>
@@ -65,7 +60,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            <div class="d-grid gap-2 d-md-block">
+            <a href="../../index.php"class="btn btn-success" type="button">Accueil</a>
+            </div>
         </form>
     </div>
+
 </body>
 </html>
