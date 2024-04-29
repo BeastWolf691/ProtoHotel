@@ -22,4 +22,17 @@ CREATE TABLE users (
     address VARCHAR(255)
 );
 
-INSERT INTO users (username, email, fullname, password, address) VALUES();
+INSERT INTO users (username, email, fullname, password, address) VALUES('Sophie','sophieduval@gmail.com','duval',458781,'45rue du desespoir');
+
+CREATE TABLE hotels (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL
+);
+INSERT INTO hotels (name, description) VALUES ('Hôtel Plaza Athénée', 'Situé au cœur de Paris, cet hôtel offre une expérience luxueuse avec une vue magnifique sur la Tour Eiffel.');
+-- Répétez pour les autres hôtels
+CREATE TABLE hotels (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL
+);
