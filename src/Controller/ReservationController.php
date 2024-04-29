@@ -1,6 +1,7 @@
 <?php
 
 // Namespace et use statements ici si vous utilisez l'autoloading et des namespaces
+// permet de vrifier les informations des réservations (client, chabre, dates arrivées et départs etc)
 
 class ReservationController {
 

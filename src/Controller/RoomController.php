@@ -1,6 +1,7 @@
 <?php
 
 // Namespace et use statements ici si vous utilisez l'autoloading et des namespaces
+// gestion chambre suite réservation et actualisation pour Voyageur
 
 class RoomController {
 
