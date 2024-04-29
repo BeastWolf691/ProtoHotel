@@ -1,0 +1,38 @@
+body{
+    margin: 2px;
+    background-color: #ffffea;
+}
+
+.banniere {
+    margin: 0 0 15px 100px;
+}
+
+.titre{
+    margin-top: 1%;
+}
+
+.justify-content-end {
+    position: absolute;
+    top: 17px;
+    right: 45px;
+    list-style-type: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li.nav-item {
+    padding: 1%;
+    text-decoration:none;
+}
+
+ul.navbar {
+    padding: 0 0 10px 0;
+}
+
+.affiche {
+    height: 850px;
+    position: relative;
+}
