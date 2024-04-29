@@ -78,6 +78,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="email">Email :</label>
             <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($userDetails['email'], ENT_QUOTES, 'UTF-8'); ?>" required>
         </div>
+        <div class="form-group">
+            <label for="address">Adresse :</label>
+            <input type="address" class="form-control" id="address" name="address" value="<?php echo htmlspecialchars($userDetails['email'], ENT_QUOTES, 'UTF-8'); ?>" required>
+        </div>
 
         <!-- ... autres champs de profil ... -->
 
