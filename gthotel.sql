@@ -3,27 +3,26 @@ CREATE TABLE IF NOT EXISTS `rooms` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(255),
     `description` TEXT,
-    `price` DECIMAL(10, 2),
-    `available` INT
+    `price` DECIMAL(10, 2)
 );
 
-INSERT INTO `rooms` (`name`, `description`, `price`, `available`) 
+INSERT INTO `rooms` (`name`, `description`, `price`) 
 VALUES
-('Chambre Standard', 'Une belle chambre pour deux personnes.', 100.00, 1),
-('Chambre Luxe', 'Spacieuse et luxueuse, avec vue sur la mer.', 200.00, 0),
-('Suite Royale', 'Notre suite la plus luxueuse.', 500.00, 1);
+('Chambre Standard', 'Une belle chambre pour deux personnes.', 100.00),
+('Chambre Luxe', 'Spacieuse et luxueuse, avec vue sur la mer.', 200.00),
+('Suite Royale', 'Notre suite la plus luxueuse.', 500.00);
 
 
 CREATE TABLE IF NOT EXISTS `create_Profil` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `lastname` VARCHAR(255) NOT NULL,
+    `name` VARCHAR(255) NOT NULL,
     `firstname` VARCHAR(255) NOT NULL ,
     `password` VARCHAR(255) NOT NULL,
     `address` VARCHAR(255) NOT NULL,
     `email` VARCHAR(255) NOT NULL
 );
 
-INSERT INTO `users` (`lastname`, `firstname`, `password`, `address`,`email`) 
+INSERT INTO `users` (`name`, `firstname`, `password`, `address`,`email`) 
 VALUES 
 ('duval', 'Sophie', 'hashed_password', '45 rue du désespoir', 'sophieduval@gmail.com');
 

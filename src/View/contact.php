@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="form-group">
                 <label for="firstname">Prénom :</label>
-                <input type="text" class="form-control" id="name" name="firstname" required placeholder="Votre nom complet">
+                <input type="text" class="form-control" id="name" name="firstname" required placeholder="Votre prénom complet">
             </div>
 
             <div class="form-group">
