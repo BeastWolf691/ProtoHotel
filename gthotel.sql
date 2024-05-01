@@ -6,7 +6,8 @@ CREATE TABLE IF NOT EXISTS `rooms` (
     `available` INT
 );
 
-INSERT INTO `rooms` (name, description, price, image, available) VALUES
+INSERT INTO `rooms` (`name`, `description`, `price`, `available`) 
+VALUES
 ('Chambre Standard', 'Une belle chambre pour deux personnes.', 100.00, 1),
 ('Chambre Luxe', 'Spacieuse et luxueuse, avec vue sur la mer.', 200.00, 0),
 ('Suite Royale', 'Notre suite la plus luxueuse.', 500.00, 1);
@@ -18,11 +19,12 @@ CREATE TABLE IF NOT EXISTS `create_Profil` (
     `firstname` VARCHAR(255) NOT NULL ,
     `password` VARCHAR(255) NOT NULL,
     `address` VARCHAR(255) NOT NULL,
-    `email` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL
 );
 
 INSERT INTO `users` (`lastname`, `firstname`, `password`, `address`,`email`) 
-VALUES ('duval', 'Sophie', 'hashed_password', '45 rue du désespoir', 'sophieduval@gmail.com');
+VALUES 
+('duval', 'Sophie', 'hashed_password', '45 rue du désespoir', 'sophieduval@gmail.com');
 
 
 CREATE TABLE IF NOT EXISTS `users` (
@@ -32,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     `lastPassword` VARCHAR(255) NOT NULL,
     `newPassword` VARCHAR(255) NOT NULL,
     `address` VARCHAR(255) NOT NULL,
-    `email` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL
 );
 
 INSERT INTO `users` (`lastname`, `firstname`, `lastPassword`, `newPassword`, `address`,`email`) 
@@ -54,5 +56,5 @@ CREATE TABLE IF NOT EXISTS `Formulaires_Contacts` (
     `prénom` VARCHAR(255) NOT NULL ,
     `email` VARCHAR(255) NOT NULL,
     `sujet` VARCHAR(255) NOT NULL,
-    `message` VARCHAR(255) NOT NULL,
+    `message` VARCHAR(255) NOT NULL
 );
