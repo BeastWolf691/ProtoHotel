@@ -1832,7 +1832,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "doctrine/orm": 20
+        "doctrine/orm": 20,
+        "symfony/cache": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
