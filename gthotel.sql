@@ -50,8 +50,9 @@ INSERT INTO `hotels` (name, description) VALUES ('Hôtel Plaza Athénée', 'Situ
 
 CREATE TABLE IF NOT EXISTS `Formulaires_Contacts` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `lastname` VARCHAR(255) NOT NULL,
-    `firstname` VARCHAR(255) NOT NULL ,
-    `last_password` VARCHAR(255) NOT NULL,
-    `address` VARCHAR(255)
+    `nom` VARCHAR(255) NOT NULL,
+    `prénom` VARCHAR(255) NOT NULL ,
+    `email` VARCHAR(255) NOT NULL,
+    `sujet` VARCHAR(255) NOT NULL,
+    `message` VARCHAR(255) NOT NULL,
 );
