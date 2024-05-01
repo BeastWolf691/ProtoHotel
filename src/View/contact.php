@@ -7,7 +7,8 @@ $error_message = '';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
+    $name = htmlspecialchars($_POST['lastname']);
+    $name = htmlspecialchars($_POST['firstname']);
     $email = htmlspecialchars($_POST['email']);
     $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
@@ -40,8 +41,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <div class="form-group">
-                <label for="name">Nom :</label>
-                <input type="text" class="form-control" id="name" name="name" required placeholder="Votre nom complet">
+                <label for="lastname">Nom :</label>
+                <input type="text" class="form-control" id="name" name="lastname" required placeholder="Votre nom complet">
+            </div>
+
+            <div class="form-group">
+                <label for="firstname">Prénom :</label>
+                <input type="text" class="form-control" id="name" name="firstname" required placeholder="Votre nom complet">
             </div>
 
             <div class="form-group">
@@ -51,7 +57,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="form-group">
                 <label for="subject">Sujet :</label>
-                <input type="text" class="form-control" id="subject" name="subject" required placeholder="Sujet de votre message">
+                <select type="text" class="form-control" id="subject" name="subject" required placeholder="Sujet de votre message">
+                    <option value="services">Services</option>
+                    <option value="employes">Employé(e)s</option>
+                    <option value="room">Chambres</option>
+                    <option value="others">Autres</option>
+                </select>
             </div>
 
             <div class="form-group">

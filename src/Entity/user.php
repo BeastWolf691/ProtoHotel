@@ -70,7 +70,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <form action="user.php" method="post">
         <div class="form-group">
-            <label for="fullname">Nom complet :</label>
+            <label for="fullname">Nom :</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" value="<?php echo htmlspecialchars($userDetails['fullname'], ENT_QUOTES, 'UTF-8'); ?>" required>
+        </div>
+        <div class="form-group">
+            <label for="fullname">Prénom :</label>
             <input type="text" class="form-control" id="fullname" name="fullname" value="<?php echo htmlspecialchars($userDetails['fullname'], ENT_QUOTES, 'UTF-8'); ?>" required>
         </div>
 
@@ -83,7 +87,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="address" class="form-control" id="address" name="address" value="<?php echo htmlspecialchars($userDetails['email'], ENT_QUOTES, 'UTF-8'); ?>" required>
         </div>
 
-        <!-- ... autres champs de profil ... -->
 
         <button type="submit" class="btn btn-primary">Mettre à jour le profil</button>
     </form>
