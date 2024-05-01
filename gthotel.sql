@@ -1,3 +1,4 @@
+-- Active: 1713252765707@@127.0.0.1@3306@gthotel
 CREATE TABLE IF NOT EXISTS `rooms` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(255),
